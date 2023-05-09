@@ -1,0 +1,290 @@
+:root {
+  --color-primary: #1ea69a;
+  --color-secondary: #20b759;
+  --color-location: rgb(55, 55, 55);
+  --color-details: rgb(85, 85, 85);
+  --color-footer: #023047;
+  --trans: all 0.2s ease-in-out;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.top-items {
+  display: flex;
+  gap: 4rem;
+}
+
+.top-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.email {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-custom {
+  background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+}
+
+.highlight-box {
+  padding: 2rem;
+  background: white;
+  width: 40%;
+  box-shadow: 1 0px 1px #000;
+  position: absolute;
+  top: 11rem;
+  right: 6rem;
+}
+
+.highlight-box a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-location);
+  transition: var(--trans);
+}
+
+.highlight-box a:hover {
+  color: var(--color-primary);
+}
+
+.location {
+  color: var(--color-details);
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.highlight-box table tr td {
+  padding-right: 1rem;
+}
+
+.highlight-box table tr td i {
+  color: var(--color-primary);
+}
+
+.sale {
+  margin-top: 1rem;
+}
+
+.sale p {
+  margin-bottom: 0;
+}
+
+.sale-highlight {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.about {
+  color: var(--color-details);
+  margin-top: 2rem;
+}
+
+.about-desc {
+  width: 80%;
+  margin: 2rem auto;
+  color: var(--color-details);
+  line-height: 1.8;
+}
+
+main h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+main h1 {
+  text-align: center;
+}
+
+.land-cards {
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  width: 100%;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.land-card {
+  margin-bottom: 20px;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.img-icons {
+  overflow: hidden;
+}
+
+.img-icons img {
+  width: 100%;
+  transform: scale(1.1);
+  transition: all ease-in 0.4s;
+}
+
+.img-icons i {
+  position: absolute;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.land-card img:hover {
+  transform: scale(1);
+}
+
+.land-card-details {
+  padding: 1rem;
+}
+
+.land-heading {
+  color: var(--color-location);
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: var(--trans);
+}
+
+.land-heading:hover {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+.location {
+  display: block;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.location:hover {
+  color: #007bff;
+}
+
+.for-sale-highlight {
+  color: var(--color-secondary);
+  margin-bottom: 0;
+}
+
+footer {
+  background: var(--color-footer);
+  padding: 5rem 2rem;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav .socials {
+  color: #8b9293;
+  display: flex;
+  gap: 1rem;
+}
+
+.row-box {
+  margin-top: 3rem;
+}
+
+.row-box ul {
+  color: rgb(135, 135, 135);
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.copyright-footer {
+  display: flex;
+  color: rgb(135, 135, 135);
+  margin-top: 3rem;
+  gap: 0.5rem;
+}
+
+.desc-body {
+  background: rgb(225, 225, 225);
+}
+
+main {
+  margin: 5rem auto;
+  width: 87%;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.main-header div h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main-header div p {
+  color: var(--color-details);
+}
+
+.for-sale-price-desc {
+  border-left: rgb(180, 180, 180) 2px solid;
+  padding-left: 2rem;
+}
+
+.for-sale-price-desc h1 {
+  margin-top: -1rem;
+  padding: 0;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+main img {
+  margin-top: 2rem;
+  background-size: cover;
+  width: 100%;
+}
+
+.main-cards-desc {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: rgb(180, 180, 180) 1px dashed;
+}
+
+.size-road {
+  display: flex;
+  gap: 3rem;
+}
+
+.recom {
+  position: relative;
+  top: 15px;
+  box-sizing: border-box;
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ea723d;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  right: -15px;
+  top: 0;
+}
+
+.recommended {
+  height: 30px;
+  font-size: 20px;
+  padding-left: 20px;
+  width: 100px;
+  background: #ea723d;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.card-image img {
+  width: 100%;
+}
